@@ -1,3 +1,5 @@
+@import "blocks/mixins.less";
+@import "blocks/variables.less";
 @import "blocks/main-header.less";
 @import "blocks/page-main.less";
 @import "blocks/information.less";
@@ -16,9 +18,11 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  background-color: #1d2631;
+  background-color: @bg-darkblue;
   color: #ffffff;
   text-transform: uppercase;
+  /*background-size: 720px auto;*/
+  min-height: 750px;
 }
 
 img {
@@ -31,7 +35,7 @@ a {
 }
 
 .general {
-  width: 320px;
+  /*width: 320px;*/
   margin: auto;
   padding: auto;
 }

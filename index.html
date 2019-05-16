@@ -10,71 +10,70 @@
     <title>Pink</title>
   </head>
   <body class="general">
-    <header class="main-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="header-logo">
-            <img class="header-logo_image" src="source/img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
-          </a>
-        <div class="main-btn">
-          <button class="main-btn_toggle" type="button">Открыть меню</button>
-        </div>
+    <header class="main-header main-header--full">
+      <div class="main-nav__wrapper">
+        <a class="main-header__logo">
+          <img src="source/img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+        </a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs" aria-label="Основное меню">
+        <button class="main-btn__toggle" type="button"><span></span></button>
           <ul class="main-nav__list">
-            <li class="list-item item--active"><a href="#">Главная</a></li>
-            <li class="list-item"><a href="#">Фотографии</a></li>
-            <li class="list-item"><a href="#">Коскурс</a></li>
-            <li class="list-item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="http://www.htmlacademy.ru" target="_blank">HTML Academy</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink</h1>
-      <section class="intro">
-        <div class="intro_background">
-          <p class="visually-hidden">Взгляните на жизнь иначе!</p>
-          <img class="intro_background_img" src="source/img/bg-back-mobile@1x.jpg" alt="bg-mobile" width="320" height="462">
-          <div class="intro_bg_img">
-            <img class="bg_img_hand" src="source/img/iphone-hand-mobile@1x.png" alt="bg-hand" width="498" height="314">
-          </div>
-          <div class="intro-mobile">
-            <a class="button">Скачать приложение</a>
-            <ul class="intro-application">
-              <li><a class="app-btn">
-                <span class="visually-hidden">Apple-logo</span>
-              </a></li>
-              <li><a class="app-btn">
-                <span class="visually-hidden">Android-logo</span>
-              </a></li>
-              <li><a class="app-btn">
-                <span class="visually-hidden">Microsoft-logo</span>
-              </a></li>
-            </ul>
-            <p class="intro-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
-          </div>
+      <header class="intro  intro--short">
+        <div class="intro__inner  intro__inner--index  intro__inner--hero">
+          <h1 class="intro__title">Приложение для фотографов Pink</h1>
+          <section class="downloads">
+            <div class="download__inner">
+              <h2 class="download__slogan">Взгляните на жизнь иначе!</h2>
+              <a class="download--button btn" href="https://itunes.apple.com" target="_blank" title="Скачать на iTunes">Скачать приложение</a>
+              <ul class="download__app">
+                <li><a class="app__btn apple__btn" href="https://itunes.apple.com" target="_blank" title="Скачать для iPhone и iPad">
+                  <span class="visually-hidden">Apple-logo</span>
+                </a></li>
+                <li><a class="app__btn android__btn" href="https://play.google.com" target="_blank" title="Скачать для Android">
+                  <span class="visually-hidden">Android-logo</span>
+                </a></li>
+                <li><a class="app__btn microsoft__btn" href="https://www.microsoft.com/store/" target="_blank" title="Скачать для Windows Phone">
+                  <span class="visually-hidden">Microsoft-logo</span>
+                </a></li>
+              </ul>
+              <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
+            </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </header>
 
       <section class="information">
-        <div class="info">
-          <p class="info-text">Устали от серости мегаполиса?</p>
-          <p class="info-text">Нам есть, что вам предложить!</p>
+        <div class="info__list">
+          <h2 class="info__title">Устали от серости мегаполиса?</h2>
+          <p class="info__text">Нам есть, что вам предложить!</p>
         </div>
-        <div class="info-advantages">
-          <h2 class="info-advantages__title">Поднимает настроение</h2>
-          <p class="info-advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div class="info-advantages">
-          <h2 class="info-advantages__title">Меняет мир вокруг</h2>
-          <p class="info-advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="info-advantages">
-          <h2 class="info-advantages__title">Заводит новых друзей</h2>
-          <p class="info-advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
-        <div class="advantages">
-          <img class="advantages__image" src="source/img/iphone-screen-mobile@1x.png" alt="Фотография приложения" width="157" height="320">
+        <div class="info__wrapper">
+          <div class="advantages">
+            <h3 class="advantages__title">Поднимает настроение</h2>
+            <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantages">
+            <h3 class="advantages__title">Меняет мир вокруг</h2>
+            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages">
+            <h3 class="advantages__title">Заводит новых друзей</h2>
+            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+          <div class="advantages">
+            <img class="advantages__image" src="source/img/iphone-screen-mobile@1x.png" alt="Фотография приложения" width="157" height="320">
+          </div>
         </div>
       </section>
 
@@ -145,5 +144,6 @@
       </section>
     </footer>
 
+    <script type="text/javascript" src="source/js/script.js"></script>
   </body>
 </html>

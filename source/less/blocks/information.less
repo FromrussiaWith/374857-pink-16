@@ -1,31 +1,61 @@
 /* Файл blocks/information.less */
 
 .information {
-  background-color: #f2f2f2;
-  .info {
-    background-color: #ffffff;
-    color: #000000;
-    padding-bottom: 30px;
-    .info-text {
-      font-size: 24px;
-      font-weight: 300;
-      text-transform: none;
-      color: #283645;
-    }
+  padding-top: 43px;
+
+  @media (min-width: @tablets) {
+  padding-top: 50px;
   }
-  .info-advantages {
-    background-color: #f2f2f2;
-    text-transform: none;
-    .info-advantages__title {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 24px;
-      color: #000000;
-    }
-    .info-advantages__text {
-      color: #283645;
-      font-size: 14px;
-      font-weight: 400;
-    }
+
+  @media (min-width: @desktops) {
+  padding-top: 69px;
+  overflow-x: hidden;
+  }
+}
+
+.info__list {
+  @include container;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablets) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: @desktops) {
+    margin-bottom: 73px;
+  }
+}
+
+.info__title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablets) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktops) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.info__text {
+  display: block;
+  margin-top: 11px;
+
+  @media (min-width: @tablets) {
+    margin-top: 0;
+    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktops) {
+    max-width: 500px;
   }
 }

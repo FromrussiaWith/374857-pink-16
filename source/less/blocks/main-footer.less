@@ -1,25 +1,46 @@
-/* Файл blocks/main-footer.less */
-
 .main-footer {
-  background-color: #ffffff;
-  .main-footer__contacts {
-    text-transform: none;
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (max-width: @phones-max) {
     text-align: center;
-    .contacts__title {
-      color: #283645;
-      font-size: 24px;
-      font-weight: 300;
+
+    &--index {
+      display: none;
     }
-    .contacts__text {
-      color: #283645;
-      font-size: 18px;
-      font-weight: 700;
-    }
-    .contacts__item {
-      color: #d22856;
-      font-size: 24px;
-      font-weight: 300;
-      font-style: normal;
-    }
+  }
+
+  @media (min-width: @tablets) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: @desktops) {
+    padding-top: 70px;
+    padding-bottom: 72px;
+  }
+}
+
+.main-footer__logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-footer__social {
+  margin-top: 40px;
+
+  @media (min-width: @tablets) {
+    margin-top: 0;
+  }
+}
+
+.main-footer__copyright {
+  margin-top: 40px;
+
+  @media (min-width: @tablets) {
+    margin-top: 0;
   }
 }
